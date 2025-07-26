@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="custom-header">
+    <h1 class="portfolio-title">Welcome to my Portfolio</h1>
+    <nav class="nav-buttons">
+      <button onclick="scrollToSection('about')">Home</button>
+      <button onclick="scrollToSection('education')">Education</button>  
+      <button onclick="scrollToSection('skills')">Skills</button>
+      <button onclick="scrollToSection('projects')">Projects</button>
+      <button onclick="scrollToSection('contact')">Contact Us</button>
+    </nav>
+  </header>
+ <div class="about-box">
+    <div class="about-container">
+      <img src="profile.jpg" alt="My Photo" class="profile-photo" />
+      <div class="about-text">
+        <h3>Hi I'm Vishnu Vardhan Gangavarapu</h3>
+        <br>
+        <h2 class="about-heading">About Me:</h2>
+        <p>I completed B.Tech graduation in Artificial Intelligence from JNTU Kakinada in Prakasam Engineering College, completed in <strong>2025</strong>. I am passionate about creating user-friendly web applications. My technical skills includes HTML, CSS, JavaScript(Basics) and SQL, and I am continuously sharpening my development skills.
+        I have successfully completed a <strong>3-month internship in Web Development</strong> at Brain O Vision and a <strong>6-month Internship in Java Full Stack</strong> at ExcelR. These experiences have equipped me with the skills to contribute effectively to modern web and full-stack development projects.
+        With strong communication, a growth mindset, and a deep interest in building innovative web platforms, I am actively seeking opportunities to grow as a full-stack developer and create impactful digital solutions.</p>
+        <div class="resume-button-container">
+          <a href="https://drive.google.com/file/d/1BYkABk5zobMk1NVJml_7r8jv0APLPDwZ/view?usp=sharing" target="_blank" class="resume-btn">
+           My Resume </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech in Artificial Intelligence, JNTU Kakinada, Prakasam Engineering College - Kandukur with the aggregation of 7.51 CGPA, 2021-2025</li>
+      <li>Intermediate, Narayana Junior College Nellore with the aggregation of 9.33 CGPA, 2019-2021</li>
+      <li>SSC, Sri G.V.S. Sankariah Memorial EM HS Gudur with the aggregation of 8.7 CGPA, 2018-2019</li>
+    </ul>
+  </div>
+  <br>
+  <div id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript(Basics)</li>
+      <li>SQL</li>
+    </ul>
+  </div>
+  <br>
+  <div id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Portfolio Website:</b> A personal portfolio website showcasing my skills and projects.</li>
+      <li><b>Online Survey Form:</b> An online survey form built with HTML and CSS that collects user feedback through structured input fields with a clean, responsive design.
+</li>
+  </div>
+  <br>
+  <div id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <p><b>Java Full Stack Internship:</b><a href="https://drive.google.com/file/d/14rhUsqsLbWHrVC_DV5n4QWeQayJ2YQCl/view?usp=sharing" target="_blank">ExcelR (6 months)</a></p>
+      <p><b>Web Development Internship:</b><a href="https://drive.google.com/file/d/1Kx7TSd4L0Q1i1fg6ccE0qN3xsAvuICwl/view?usp=sharing"> Brain O Vision (3 months)</a></p>
+    </ul>
+  </div>
+  <br>
+  <div id="contact">
+    <h2>Contact Us</h2>
+    <p><a href="tel:+919381360530"><i class="fas fa-phone"></i></a></p>
+    <p><a href="mailto:vishnuvardhangangavarapu@gmail.com"><i class="fas fa-envelope"></i></a></p>
+    <p><a href="https://www.linkedin.com/in/vishnu-vardhan-gangavarapu" target="_blank"><i class="fab fa-linkedin-in"></i></a></p>
+    <p><a href="https://www.github.com/vishnuvardhan-2004" target="_blank"><i class="fab fa-github"></i></a></p>
+</body>
+<script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+</html>

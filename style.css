@@ -1,0 +1,193 @@
+* {
+  margin: 2px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 100px;
+  font-family: Arial, sans-serif;
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+.custom-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 1000;
+}
+
+.portfolio-title {
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-buttons button {
+  background: #00ddff;
+  color: #151515;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background: #e60000;
+  transform: scale(1.05);
+}
+
+.about-box {
+  background: #ffffff;
+  margin: 30px auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #4f46e5;
+  transition: 0.3s ease-in-out;
+  max-width: 1000px;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  border-left-color: #8b5cf6;
+  background: #eaf701;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-heading {
+  color: #0000ff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+#education, #skills, #projects, #certifications {
+  background: #ffffff;
+  margin: 30px auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #ff0d00;
+  transition: 0.3s ease-in-out;
+  max-width: 1000px;
+}
+
+#education:hover,
+#skills:hover,
+#projects:hover,
+#certifications:hover {
+  transform: translateY(-5px);
+  border-left-color: #ecfd03;
+  background: #eaf701;
+}
+
+#certifications a {
+  color: #f50529;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#certifications a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-left: 6px solid #ff0d00;
+  max-width: 1000px;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+#contact a[href^="tel"] {
+  background-color: #16a34a;
+}
+
+#contact a[href^="mailto"] {
+  background-color: #ef4444;
+}
+
+#contact a[href*="linkedin"] {
+  background-color: #0077b5;
+}
+
+#contact a[href*="github"] {
+  background-color: #333;
+}
+
+#contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: #eaf701;
+}
